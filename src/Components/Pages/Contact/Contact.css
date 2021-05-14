@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+
+.contact {
+  top: 80px;
+  height: 90vh;
+  display: flex;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  color: #211d1f;
+
+  /* design */
+  background-color: #eeebdd;
+  border: 25px solid #feffff;
+  padding: 1em;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+
+/* .yellow_box {
+  background-color: #f8e700;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+} */
+
+.contacts_btn {
+  margin-top: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    font-size: 1rem;
+  }
+}

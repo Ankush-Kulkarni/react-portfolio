@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+
+.home {
+  /* top: 80px; */
+  height: 90vh;
+  display: flex;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  color: #eeebdd;
+
+  /* background-image: url("./Images/benjamin-davies-JrZ1yE1PjQ0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+  position: relative;
+  background-color: #f8e700;
+  color: #211d1f;
+  border: 0.6em solid #feffff;
+  /* z-index: -1; */
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 5px;
+}
+
+.white_box {
+  position: absolute;
+  background-color: #feffff;
+  width: 40%;
+  height: 50%;
+  animation-name: ghoom;
+  animation-duration: 6s;
+  transition: width 3s, height 3s, transform 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes ghoom {
+  from {
+    /* left: 0%;
+    bottom: 20%; */
+    transform: rotate(90deg);
+  }
+  to {
+    /* left: 50%;
+    top: 60%; */
+    transform: rotate(180deg);
+  }
+}
+
+.white_box:hover {
+  width: 50%;
+  height: 60%;
+  transform: rotate(90deg);
+}
+
+.black_box {
+  position: absolute;
+  font-size: 1.2rem;
+  border: 5px solid #211d1f;
+  width: 40%;
+  height: 50%;
+  right: 35%;
+  top: 30%;
+  display: grid;
+  place-items: center;
+  /* animation-name: ghoom;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(1, 0, 2, 1); */
+  transition: width 5s, height 5s, transform 6s;
+}
+
+.black_box:hover {
+  width: 50%;
+  height: 60%;
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    font-size: 0.5rem;
+  }
+  .white_box {
+    width: 40%;
+    height: 50%;
+  }
+  .black_box {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    right: 36%;
+    top: 30%;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+  }
+}
