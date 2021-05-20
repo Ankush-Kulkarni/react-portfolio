@@ -12,7 +12,7 @@ const Skills = () => {
     <>
       <div className="skills">
         <img src={Photo1} alt="Photo1" />
-
+        
         <img src={Photo2} alt="Photo2" />
         <img src={Photo3} alt="Photo3" />
         <img src={Photo4} alt="Photo4" />

@@ -1,0 +1,81 @@
+.card_container {
+  /* background-color: lightcoral; */
+
+  width: 30%;
+  height: 50%;
+}
+
+.card_container img {
+  width: 100%;
+  height: 100%;
+  /* background-color: lightgreen; */
+}
+
+.weather_container {
+  /* background-color: khaki; */
+  width: 80%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+
+  font-size: 1.2rem;
+  border: 2px solid #211d1f;
+  background-color: #feffff;
+
+  /* transition: width 5s, height 5s, transform 6s; */
+}
+
+.travel_container {
+  /* background-color: lightblue; */
+  width: 80%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  border: 2px solid #211d1f;
+  background-color: #feffff;
+}
+
+.todo_container {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  border: 2px solid #211d1f;
+  background-color: #feffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  padding-top: 1em;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card_container {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  figcaption {
+    font-size: 1.3rem;
+  }
+}

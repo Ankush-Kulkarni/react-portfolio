@@ -1,27 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 
-.photos {
-  /* top: 80px; */
+/*.photos {
   height: 90vh;
   display: flex;
   font-size: 3rem;
   align-items: center;
   justify-content: center;
   color: #eeebdd;
-
-  /* background-image: url("./Images/benjamin-davies-JrZ1yE1PjQ0-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
   position: relative;
   background-color: #eeebdd;
   color: #211d1f;
-  border: 0.6em solid #feffff;
-  /* z-index: -1; */
   font-family: "PT Sans", sans-serif;
   letter-spacing: 5px;
-}
+  
+} */
 
-.whit_box {
+/* .whit_box {
   position: absolute;
   border: 2px solid #211d1f;
   background-color: #feffff;
@@ -40,9 +34,6 @@ figure img {
 }
 
 .whit_box:hover {
-  /* width: 32%;
-  height: 72%; */
-  /* transform: rotate(90deg); */
   z-index: 4;
 }
 
@@ -61,12 +52,6 @@ figure img {
   transition: width 5s, height 5s, transform 6s;
 }
 
-.blac_box:hover {
-  /* width: 50%;
-  height: 60%;
-  transform: rotate(360deg); */
-}
-
 @media screen and (max-width: 768px) {
   .whit_box {
     width: 60%;
@@ -78,5 +63,26 @@ figure img {
     right: 15%;
     top: 30%;
     right: 30%;
+  }
+} */
+
+.photos {
+  top: 80px;
+  height: 90vh;
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  /* flex-direction: column; */
+  /* font-size: 3rem; */
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: #eeebdd;
+  flex-wrap: wrap;
+  border: 25px solid #feffff;
+}
+
+@media screen and (max-width: 768px) {
+  .photos {
+    height: 100%;
   }
 }
